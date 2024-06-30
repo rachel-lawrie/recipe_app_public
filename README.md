@@ -2,7 +2,7 @@
 
 ## Overview
 
-A user runs this script in their terminal. From the terminal, they can conduct the following actions by entering the relevant number:
+A user runs this script in their terminal. From the terminal, they can conduct the following actions by entering the relevant number or word:
 
 1. Create a new recipe
 2. View all recipes
