@@ -1,8 +1,15 @@
-# Simple Addition Script
+# Recipe App Script
 
 ## Overview
 
-This project consists of a simple Python script named `add.py` that prompts the user to enter two numbers, adds them together, and prints the result. It is developed in a virtual environment to ensure consistency and manage dependencies effectively.
+A user runs this script in their terminal. From the terminal, they can conduct the following actions by entering the relevant number:
+
+1. Create a new recipe
+2. View all recipes
+3. Search for a recipe by ingredient
+4. Update an existing Recipe
+5. Delete a Recipe
+   Type 'quit' to exit the program.
 
 ## Data Structures
 
@@ -51,6 +58,26 @@ Why a List?
   pip install -r requirements.txt
   ```
 
+### Database Setup
+
+- This project uses a MySQL database running locally. Ensure MySQL is installed on your system.
+- Create a new MySQL database and user or ensure you have the credentials for an existing database and user.
+
+For example, to create a new database and a user with full privileges on that database, you can use the following commands in your MySQL client:
+
+```
+CREATE DATABASE my_database;
+CREATE USER 'cf-python'@'localhost' IDENTIFIED BY 'password';
+GRANT ALL PRIVILEGES ON my_database.* TO 'cf-python'@'localhost';
+FLUSH PRIVILEGES;
+```
+
+Update the database connection string in the script if necessary. The default is set to:
+
+```
+mysql://cf-python:password@localhost/my_database
+```
+
 ## Running the Script
 
 1. **Activate the Virtual Environment**:
@@ -63,7 +90,7 @@ Why a List?
 2. **Run the Script**:
 
    ```bash
-   python add.py
+   python recipe_app.py
    ```
 
-3. **Follow the Prompts**: Enter two numbers as prompted, and the script will display their sum.
+3. **Follow the Prompts**
