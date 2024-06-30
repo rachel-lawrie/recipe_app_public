@@ -2,14 +2,13 @@
 
 ## Overview
 
-A user runs this script in their terminal. From the terminal, they can conduct the following actions by entering the relevant number:
+A user runs this script in their terminal. From the terminal, they can conduct the following actions by entering the relevant number or word:
 
 1. Create a new recipe
 2. View all recipes
 3. Search for a recipe by ingredient
 4. Update an existing Recipe
-5. Delete a Recipe
-   Type 'quit' to exit the program.
+   Delete a Recipe Type 'quit' to exit the program.
 
 ## Data Structures
 
